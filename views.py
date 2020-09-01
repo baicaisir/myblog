@@ -60,6 +60,9 @@ def gustlist(num):
     count = Message.query.count()
     return render_template("gustbook.html",**locals())
 
+@app.route("/archives.html")
+def archives():
+    return render_template("archives.html")
 # @app.route("/gustbook/",methods=["POST","GET"])
 # def gustbook():
 #     if request.method == "POST":
