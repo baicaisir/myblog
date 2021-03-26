@@ -10,6 +10,14 @@ from manage import app,basedir,session
 def index():
     return render_template("index.html")
 
+@app.route("/vpn/")
+def vpn():
+    return render_template("vpn")
+
+@app.route("/winvpn/")
+def winvpn():
+    return render_template("winvpn")
+
 @app.route("/update/")
 def update():
     return render_template("update.html")
