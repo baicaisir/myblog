@@ -1,9 +1,8 @@
-import os,random
+import random
 import datetime
-from flask import request
 from flask import render_template
 from models import *
-from manage import app,basedir,session
+from manage import app,session
 
 @app.route("/")
 @app.route("/index/")
